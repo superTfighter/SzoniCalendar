@@ -1,0 +1,65 @@
+body{
+    background-color: blueviolet;
+    color: white;
+}
+
+div#calendar{
+
+    background-color: white;
+}
+
+:root {
+    --black: #222;
+    --yellow: #fff295;
+    --purple: #fa0afa;
+    --blue: #0daaf8;
+    --green: #0df882;
+    --red: #e64c4c;
+    --pink: #f70d8a;
+    --main-margin-top: 10vh;
+    --canvas-width: 320px;
+    --canvas-height: 320px;
+  }
+  
+  /*---- Resetter ----*/
+  
+  * {
+      margin: 0;
+      border: 0;
+      padding: 0;
+  }
+  
+  /*---- Default classes ----*/ 
+  main {
+    margin: var(--main-margin-top) auto;
+    width: var(--canvas-width);
+  }
+  /*---- Custom classes ----*/
+  
+  #canvas {
+    z-index:9999;
+    position:absolute;
+    top:calc(var(--main-margin-top) + 2rem);
+    left:calc(50vw - var(--canvas-width)/2);
+    background-color: transparent;
+  }
+  
+  #canvas-background {
+    z-index: 999;
+    position: absolute;
+    width: inherit;
+    line-height: 1em;
+    font-size: 5rem;
+    text-align: center;
+    color:var(--pink);
+  }
+
+  .canvas-image{
+    width: 320px;
+    height: 300px;
+  }
+
+  #description{
+    position: relative;
+
+  }
